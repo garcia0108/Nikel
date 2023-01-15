@@ -91,7 +91,7 @@ function saveSession(date, saveSession) {
         localStorage.setItem("session", date);//Usuário fica salvo mesmo fechando o navegador.
     }
 
-    sessionStorage.setItem (logged, date); //Slavar na sessão(Quando fechar o navegador ele se apaga
+    sessionStorage.setItem (logged, date); //Salvar na sessão(Quando fechar o navegador ele se apaga)
 
 }
 

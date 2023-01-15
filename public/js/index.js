@@ -81,17 +81,17 @@ function checkLogged(){
 }
 
 //Função para salvar os dados no Banco de Dados local do Sistema 
-function saveAccount(date){
-    localStorage.setItem(date.login, JSON.stringify(date));//Mudar o objeto para uma string
+function saveAccount(data){
+    localStorage.setItem(date.login, JSON.stringify(data));//Mudar o objeto para uma string
 }
 
 //Função para pernanecer o usuário logado em uma sessão.
-function saveSession(date, saveSession) {
+function saveSession(data, saveSession) {
     if(saveSession){
-        localStorage.setItem("session", date);//Usuário fica salvo mesmo fechando o navegador.
+        localStorage.setItem("session", data);//Usuário fica salvo mesmo fechando o navegador.
     }
 
-    sessionStorage.setItem (logged, date); //Salvar na sessão(Quando fechar o navegador ele se apaga)
+    sessionStorage.setItem (logged, data); //Salvar na sessão(Quando fechar o navegador ele se apaga)
 
 }
 

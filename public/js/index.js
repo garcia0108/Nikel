@@ -16,14 +16,14 @@ document.getElementById("login-form").addEventListener("submit", function(e){
 
     //Verificação de E-mail se existe ou não.
     if(!account){
-        alert("Ops verifeque o usuário ou a senha.");
+        alert("Opps! Verifeque o usuário ou a senha.");
         return;
     }
 
     //Verificação de senha se exixte ou não.
     if(account){
         if(account.passoword !== passoword) {
-            alert("Ops verifeque o usuário ou a senha.");
+            alert("Opps! Verifeque o usuário ou a senha.");
             return;
         }
 
@@ -91,7 +91,7 @@ function saveSession(data, saveSession) {
         localStorage.setItem("session", data);//Usuário fica salvo mesmo fechando o navegador.
     }
 
-    sessionStorage.setItem (logged, data); //Salvar na sessão(Quando fechar o navegador ele se apaga)
+    sessionStorage.setItem("logged", data); //Salvar na sessão(Quando fechar o navegador ele se apaga)
 
 }
 
